@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainCapNhat">
+    <EditText
+        android:inputType="text"
+        android:id="@+id/dbtieude"
+        android:hint="Tên truyện"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"></EditText>
+
+    <EditText
+        android:id="@+id/dbnoidung"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:hint="Nội dung"
+        android:inputType="text"></EditText>
+    <EditText
+        android:inputType="textUri"
+        android:hint="Ảnh bìa"
+        android:id="@+id/dbimg"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"></EditText>
+
+    <Button
+        android:id="@+id/buttonCapNhat"
+        android:layout_width="125dp"
+        android:layout_height="83dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="10dp"
+        android:text="Cập nhật"></Button>
+
+
+</LinearLayout>

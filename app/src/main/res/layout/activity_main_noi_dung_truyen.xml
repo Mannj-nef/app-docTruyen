@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background1"
+    tools:context=".MainNoiDungTruyen">
+
+
+    <TextView
+        android:id="@+id/TenTruyen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:background="@drawable/customer_tv_noidung"
+        android:id="@+id/NoiDung"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:padding="2dp"
+        android:scrollbars="vertical"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonChiase"
+        app:layout_constraintEnd_toEndOf="@+id/TenTruyen"
+        app:layout_constraintStart_toStartOf="@+id/TenTruyen"
+        app:layout_constraintTop_toBottomOf="@+id/TenTruyen" />
+
+
+    <Button
+        android:id="@+id/buttonDanhgia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đánh giá"
+        android:textColor="@color/white"
+        android:background="@drawable/botron2"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonChiase"
+        app:layout_constraintEnd_toStartOf="@+id/buttonChiase"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonChiase" />
+
+
+    <Button
+        android:id="@+id/buttonChiase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="16dp"
+        android:text="Chia sẻ"
+        android:textColor="@color/white"
+        android:background="@drawable/botron3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonYeuthich"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonDanhgia" />
+
+    <Button
+        android:id="@+id/buttonYeuthich"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yêu thích"
+        android:background="@drawable/botron4"
+        android:textColor="@color/white"
+
+        app:layout_constraintBottom_toBottomOf="@+id/buttonChiase"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonChiase"
+        app:layout_constraintTop_toTopOf="@+id/buttonChiase" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
